@@ -45,19 +45,19 @@ class App extends Component {
 
           <Routes>
             
-            <Route path={"/website/"} element={<Home/>} />
-            <Route path={"/website/about/"} Component={About} />
-            <Route path={"/website/loading/"} Component={Loading} />
-            <Route path={"/website/Under_construction"} Component={Under_construction} />
-            <Route path={"/website/carrier"} Component={Carrier} />
-            <Route path={"/website/test"} Component={Test} />
-            <Route path={"/website/from=blog/"} element={<lazyHome/>} />
-            <Route path={"/website/blogs/"} Component={Main_Blog} />
+            <Route path={"/"} element={<Home/>} />
+            <Route path={"/about/"} Component={About} />
+            <Route path={"/loading/"} Component={Loading} />
+            <Route path={"/Under_construction"} Component={Under_construction} />
+            <Route path={"/carrier"} Component={Carrier} />
+            <Route path={"/test"} Component={Test} />
+            <Route path={"/from=blog/"} element={<lazyHome/>} />
+            <Route path={"/blogs/"} Component={Main_Blog} />
             <Route path={"/blogs/:Headings"} Component={Blog_detials} />
-            <Route path={"/website/Book/"} Component={Booking} />
-            <Route path={"/website/Register/"} Component={Register} />
-            <Route path={"/website/services/:id"} Component={Main_services} />
-            <Route path={"/website/events/"} Component={Events} />
+            <Route path={"/Book/"} Component={Booking} />
+            <Route path={"/Register/"} Component={Register} />
+            <Route path={"/services/:id"} Component={Main_services} />
+            <Route path={"/events/"} Component={Events} />
 
           </Routes>
         </div>

@@ -41,29 +41,29 @@ export default function Main_Blog() {
             </label>
 
             
-            <Link to={"/website/"} onClick={close} className="links">
+            <Link to={"/"} onClick={close} className="links">
                 Home
               </Link>
 
               <a href="#service_list" onClick={close} className="links">
                 Services
               </a>
-              <Link to={"/website/events/"} onClick={close} className="links">
+              <Link to={"/events/"} onClick={close} className="links">
                 Events
               </Link>
-              <Link to={"/website/blogs/"} onClick={close} className="links">
+              <Link to={"/blogs/"} onClick={close} className="links">
                 Blog
               </Link>
-              <Link to={"/website/Under_construction"} className="links" onClick={close}>Training</Link>
-              <Link to={"/website/Under_construction"} className="links" onClick={close}>Glitch</Link>
-              <Link to={"/website/carrier"} onClick={close} className="links">
+              <Link to={"/Under_construction"} className="links" onClick={close}>Training</Link>
+              <Link to={"/Under_construction"} className="links" onClick={close}>Glitch</Link>
+              <Link to={"/carrier"} onClick={close} className="links">
                 Careers
               </Link>
               <a href="#down" onClick={close} className="links">
                 About
               </a>
             <div>
-              <Link id="jU">Join Us</Link>
+              <Link to={"/Book/"} id="jU">Book Now</Link>
             </div>
           </div>
         </nav>

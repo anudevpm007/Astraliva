@@ -3,24 +3,19 @@ import "./Home_footer.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-export default function Home_footer() {
-  // const [email, setEmail] = useState({})
-
-  // const getData = (event) => {
-  //   setEmail({ email: event.target.value })
-  //   console.log(email.email);
-
-  // }
-
+export default function HomeFooter() {
 
   const sub = (event) => {
-    // console.log(email);
     event.preventDefault();
     let email = document.getElementById('sub_email').value;
-    let data = {email:email};
-    console.log(data.length)
-    if (data.length !== 0) {
-      axios.post("http://localhost:8000/", data).then(res => console.log("Status Code :"+res.status)).catch(err => console.log("error"));
+    console.log(email.length)
+    if (email.length !== 0) {
+      axios.post("http://localhost:2452/subscribe",{email}).then(result=>{
+        console.log(result);
+      }).catch(err=>{
+        console.log(err);
+        
+      })
       
     }
   }

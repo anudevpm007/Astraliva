@@ -14,6 +14,15 @@
     color: aqua;
 }
 
+#Home{
+    position: relative;
+}
+
+#Home_Menu{
+    width: 100%;
+    position: absolute;
+}
+
 #Home_header_S1 {
     height: 600px;
     display: flex;
@@ -112,6 +121,8 @@
 
 #Home_services {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #Home_services>div {
@@ -124,8 +135,11 @@
 /* home services */
 
 #Home_services_row {
-    margin-top: 20px;
     width: 65%;
+}
+
+#Home_services_row >div{
+    margin: 20px;
 }
 
 .Home_services_box {
@@ -479,6 +493,14 @@
     width: 100%;
 }
 
+#Home_Middle_heading_B{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
 @media screen and (max-width:900px) {
     #B_header>div {
         width: 80%;
@@ -515,10 +537,22 @@
     #Home_start_form>div{
         width: 70%;
     }
-    
+    #B_header_sec>div>div>h6{
+        font-size: smaller;
+    }
+    #B_header_sec>div>div>p{
+        font-size: 2.1vw;
+    }
 }
 
 @media screen and (max-width:500px) {
+    #Home_services{
+        margin: 0px;
+        padding: 0px;
+    }
+    #Home_services_row {
+        width: 100%;
+    }
 
     #Home_start{
         padding: 0px;
@@ -531,11 +565,12 @@
     .Th_Header_S>span>img{
         width: 50px;
     }
+    
     #B_header_sec>div>div>h6{
         font-size: smaller;
     }
     #B_header_sec>div>div>p{
-        font-size: smaller;
+        font-size: fo;
     }
     #Home_services>header>h2{
         font-size: 3.6vw;

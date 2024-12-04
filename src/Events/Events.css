@@ -4,6 +4,9 @@
     justify-content: center;
 
 }
+#Events_menu_div{
+    margin-bottom: 100px;
+}
 
 #Game_div{
     margin-left: -10vw;
@@ -216,4 +219,77 @@
 #Events_subscribe_pera{
     text-align: center;
     font-size: 23px;
+}
+
+@media screen and (max-width: 800px) {
+    #Event_box_heading{
+        font-size: 3vw;
+        margin-bottom: 30px;
+    }
+
+    #Event_box_pera{
+        font-size: 2vw;
+        margin-bottom: 30px;
+    }
+
+    #Event_box_info>div{
+        font-size: 1vw;
+        padding: 0px;
+    }
+    #Events_subscribe_pera{
+        font-size: 4vw;
+    }
+
+    #Event_subscribe_btn>input{
+        font-size: 2vw;
+    }
+    #Events_subscribe{
+        padding: 0px;
+        width: 100%;
+    }
+    #Event_box_img{
+        padding: 0px;
+    }
+    #Event_box_detials{
+        padding: 0px;
+    }
+    #Event_box{
+        margin: 10px;
+    }
+    #Events_subscribe_pera{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #Game_div{
+        font-size: 15vw;
+        display: none;
+    }
+
+    #sub_Events_heading_1_2{
+        font-size: 16vw;
+    }
+    #sub_Events_heading_1_1{
+        font-size: 4vw;
+    }
+    #sub_Events_heading_1_3{
+        font-size: 2.5vw;
+        width: 300px;
+    }
+
+    #sub_Events_heading_2{
+        margin-top: 40px;
+        font-size: 2vw;
+        width: 300px;
+    }
+
+    #Events_Search{
+        width: 85%;
+    }
+
+    #Event_search_btn>input{
+        font-size: 4vw;
+    }
 }
